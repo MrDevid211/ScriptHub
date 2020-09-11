@@ -53,17 +53,8 @@ body {
       "footer footer"
   }
 
-  #Logo span {
-    font-size: 8px;
-  }
 
-   #Logo {
-    margin: 8px 0 0 3px;
-    color: #f00;
-    /*margin-top: 15px;*/
-    width: 100%
-    font-size:;
-  }
+
 /*
    #About {
     margin-right: 10%;
@@ -390,36 +381,7 @@ content {
   font-size: 25px;
 }
 
-.Material {
-  width: 100%;
-  grid-row-gap: 10px; 
-  display: grid;
-}
 
-
-.Material a {
-  overflow: hidden;
-  /*background: linear-gradient(to bottom right, #0d0d0c 22%, #262625 56%, #3b3a39 80%);*/
-  background-color: #080c0f;
-  font-size: 16px; /* Размер шрифта */
-  padding: 10px 20px; /* Поля вокруг текста */
-  color: #fff; /* Цвет текста */
-  border: 1px solid #333; /* Параметры рамки */
-  border-radius: 20px; /* Радиус скругления */
-  grid-column: 2fr 8fr;
-  /*background-color: cyan;*/
-  min-width: 550px;
-  min-height: 50px;
-  max-height: 150px;
-  text-decoration: none;
-}
-
-
-.Material a:hover {
-  font-size: 18px;
-  color: #ff1e00;
-  min-height: 110px;
-}
 
 
 .poster {
