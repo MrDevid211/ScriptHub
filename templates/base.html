@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>{% block title %}{% endblock %}</title>
+
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="{{ url_for('static', filename='font-awesome/css/font-awesome.min.css') }}">
+	<script src="../static/Script.js"></script>
+	<!-- jQuery 1.8 or later, 33 KB -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	<!-- Fotorama from CDNJS, 19 KB -->
+	<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+</head>
+<body>
+    <style>
+        body {
+            background-image: url(static/Images/FON_2.jpeg);
+        }
+    </style>
+		<header>
+			<div id="Logo">
+	        	<a href="/">ScriptHub</a>
+	     	</div>
+	      	<div id="About">
+	      		<a href="/">Home</a>
+       		 	<a href="#" title="Contacts">Contacts</a>
+      		 	<a href="#" title="Menu">Menu</a>
+      		 	<a href="FAQ.html" title="FAQ">FAQ</a>
+<!--       		 	<div class="Search">
+		      		<div class="search-box">
+					<input type="text" class="search-txt" placeholder="Поиск в разработке ;)">
+					<a href="#" class="search-btn"><i class="fa fa-search" aria-hidden="true"></i></a>
+	    	 	</div> -->
+    	    </div>
+    	    <div class="burger">
+    	    	<span></span>
+    	    </div>
+    	    <script>
+    	    	$(document).ready(function() {
+					$('.burger').click(function(event) {
+						$('.burger, .Sidebar').toggleClass('active');
+					});
+				});
+    	    </script>
+		</header>
+    {% block body %}{% endblock %}
+
+		<footer>
+			<div class="Info">
+				<span><img class="Img" src="static/Images/Icon/instagram.png"> My Instagram:</span><a class="MyInst" href="#"> mr.devid_ng</a>
+			</div>
+			<div class="DownLogo">
+				<span>ScriptHub</span>
+			</div>
+		</footer>
+</body>
+</html>

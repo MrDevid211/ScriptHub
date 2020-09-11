@@ -1,0 +1,164 @@
+{% extends "base.html" %}
+
+{% block title %}
+    ScriptHub
+{% endblock %}
+
+{% block body %}
+
+    <style>
+        .alert {
+            background-color: #080c0f;
+        }
+
+        content {
+            height: 85%;
+            width: 90%;
+            margin-top: 100px;
+            min-width: 70%;
+            background-color: #0A0A0B;
+            margin-left: 5%;
+            grid-area: Content;
+            min-height: 50%;
+            max-height: 55%;
+            overflow-x: hidden;
+        }
+        aside {
+            width: 90%;
+            right: -100%;
+            border: 1px solid silver;
+            background-color: #111;
+            margin: 8% 0 0 0;
+            /*  height:85vh;*/
+            /*  position: fixed;*/
+            z-index: 1000;
+            /*  top: 0;
+            left: 0;*/
+            grid-area: Sidebar;
+        }
+        @media(max-width: 1370px){
+            aside{
+                margin: 8% 0 0 0;
+                display: none;
+            }
+            content {
+                width: 168%;
+            }
+        }
+    </style>
+
+	<div class="Wrapper">
+		<content>
+			<div class="alert alert-info">
+                <h4>Name</h4>
+                <p>Intro</p>
+                <p><b>2000</b></p>
+                <button class="btn btn-warning">Detail</button>
+			</div>
+            <div class="alert alert-info">
+                <h4>Name</h4>
+                <p>Intro</p>
+                <p><b>2000</b></p>
+                <button class="btn btn-warning">Detail</button>
+			</div>
+			<div class="alert alert-info">
+                <h4>Name</h4>
+                <p>Intro</p>
+                <p><b>2000</b></p>
+                <button class="btn btn-warning">Detail</button>
+			</div>
+            <div class="alert alert-info">
+                <h4>Name</h4>
+                <p>Intro</p>
+                <p><b>2000</b></p>
+                <button class="btn btn-warning">Detail</button>
+			</div>
+			<div class="alert alert-info">
+                <h4>Name</h4>
+                <p>Intro</p>
+                <p><b>2000</b></p>
+                <button class="btn btn-warning">Detail</button>
+			</div>
+            <div class="alert alert-info">
+                <h4>Name</h4>
+                <p>Intro</p>
+                <p><b>2000</b></p>
+                <button class="btn btn-warning">Detail</button>
+			</div>
+            <div class="alert alert-info">
+                <h4>Name</h4>
+                <p>Intro</p>
+                <p><b>2000</b></p>
+                <button class="btn btn-warning">Detail</button>
+			</div>
+            <div class="alert alert-info">
+                <h4>Name</h4>
+                <p>Intro</p>
+                <p><b>2000</b></p>
+                <button class="btn btn-warning">Detail</button>
+			</div>
+			<div class="alert alert-info">
+                <h4>Name</h4>
+                <p>Intro</p>
+                <p><b>2000</b></p>
+                <button class="btn btn-warning">Detail</button>
+			</div>
+            <div class="alert alert-info">
+                <h4>Name</h4>
+                <p>Intro</p>
+                <p><b>2000</b></p>
+                <button class="btn btn-warning">Detail</button>
+			</div>
+			<div class="alert alert-info">
+                <h4>Name</h4>
+                <p>Intro</p>
+                <p><b>2000</b></p>
+                <button class="btn btn-warning">Detail</button>
+			</div>
+            <div class="alert alert-info">
+                <h4>Name</h4>
+                <p>Intro</p>
+                <p><b>2000</b></p>
+                <button class="btn btn-warning">Detail</button>
+			</div>
+			<div class="alert alert-info">
+                <h4>Name</h4>
+                <p>Intro</p>
+                <p><b>2000</b></p>
+                <button class="btn btn-warning">Detail</button>
+			</div>
+            <div class="alert alert-info">
+                <h4>Name</h4>
+                <p>Intro</p>
+                <p><b>2000</b></p>
+                <button class="btn btn-warning">Detail</button>
+			</div>
+            <div class="alert alert-info">
+                <h4>Name</h4>
+                <p>Intro</p>
+                <p><b>2000</b></p>
+                <button class="btn btn-warning">Detail</button>
+			</div>
+            <div class="alert alert-info">
+                <h4>Name</h4>
+                <p>Intro</p>
+                <p><b>2000</b></p>
+                <button class="btn btn-warning">Detail</button>
+			</div>
+		</content>
+
+		<aside class="Sidebar">
+			<p class="Section_Nav">Разделы</p>
+			<ul class="Section">
+				<li><img class="Img" src="static/Images/Icon/html5.png"><a href="Section_Site/Web_Dev.html">+<img class="Img" src="static/Images/Icon/css.png"> Web Dev</a></li>
+				<li><img class="Img" src="static/Images/Icon/java.png"><a href="Section_Site/JavaScript.html"> JavaScript</a></li>
+				<li><img class="Img" src="static/Images/Icon/python.png"><a href="Section_Site/Python.html"> Python</a></li>
+				<li><img class="Img-1" src="static/Images/Icon/php-1.png"><a href="Section_Site/PHP.html"> PHP</a></li>
+				<li><img class="Img" src="static/Images/Icon/github.png"><a href="Section_Site/GitHub.html"> Repositories GitHub</a></li>
+				<li><img class="Img-1" src="static/Images/Icon/hacker_2.png"><a href="Section_Site/Hack.html"> HACK and Other</a></li>
+				<li><img class="Img" src="static/Images/Icon/termux2.png"><a href="Section_Site/Termux.html"> Termux</a></li>
+			</ul>
+		</aside>
+
+	</div>
+{% endblock %}

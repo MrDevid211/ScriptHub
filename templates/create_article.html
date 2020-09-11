@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}
+    ScriptHub
+{% endblock %}
+
+{% block body %}
+<style>
+    .create_content {
+        background: #080c0f;
+        height:100%;
+    }
+    .form-control {background-color: #2f3640}
+</style>
+<div class="create_content">
+    <form method="post">
+        <br>
+        <br>
+        <input type="text" name="title" id="title" class="form-control" placeholder="Введите название"><br>
+        <textarea name="intro" id="intro" class="form-control" placeholder="Введите анонс" ></textarea><br>
+        <textarea name="text" id="text" class="form-control" placeholder="Введите основной текст"></textarea><br>
+{#        <input type="file" name="photo" accept="image/*, image/jpeg">#}
+        <p><select>
+            <option value="Web_Dev">Web_Dev</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Python">Python</option>
+            <option value="PHP">PHP</option>
+            <option value="GitHub">GitHub</option>
+            <option value="Hack">Hack</option>
+            <option value="Termux">Termux</option>>
+            </select>
+            <input type="submit" class="btn btn-success" value="Отправить">
+        </p>
+    </form>
+</div>
+{% endblock %}
